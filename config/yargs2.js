@@ -17,9 +17,10 @@ const argv = require('yargs')
         //default: false, se quita ya que esta por defaul en la app principal
         describe: 'muestra la tabla con consola'
     })
+    
 
     .check((argv, options) => {
-        if (isNAN(argv.b)) {
+        if (isNaN(argv.b)) {
             throw 'La base tiene que se ser un número'
         }
         return true;

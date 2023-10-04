@@ -21,8 +21,8 @@ const crearArchivo = async (base = 5, listar = false) => {
         // Si viene el parametro listar es decir existe entonces imprime esto en consola
         // lo que s encuentra acumulado en la varible salida
         if (listar) {
-            console.log('====================').green;
-            console.log(' Tabla del:', green, colors.blue(base));
+            console.log('===================='.green);
+            console.log(' Tabla del:'.green, colors.blue(base));
             console.log('===================='.green);
             console.log(salida);
         }
